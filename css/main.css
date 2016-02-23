@@ -81,7 +81,7 @@ a:focus {
   	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
   	position: fixed;
   	top: 0px;
-  	background: #fff;
+  	background: #c3d7d8;
   	box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
 }
 #headerBar .container {
@@ -132,15 +132,12 @@ a:focus {
 #sectionIntro {
   	position: relative;
   	width: 100%;
-  	min-height: 670px;
+  	min-height: 800px;
 	background-size: cover;
   	background-image: url(../images/sr2.jpg);
   	background-position: 0% 100%;
 
-
-  
-
-}
+ }
 
 .textIntro {
 	margin-right: auto;
@@ -386,8 +383,9 @@ a:focus {
 
 #sectionPortfolio{
 	padding-bottom: 100px;
-	background: #f9f7f8;
+	background: #c3d7d8;
 }
+	
 .mGrid img{
 	width: 100%;
 	height: 100%;
@@ -515,32 +513,32 @@ a:focus {
 #sectionContact{
 	margin-bottom: 0px;
 	padding-bottom: 100px;
-	background: #fbfbfb;
+	background: #c3d7d8;
 	background-size: cover;
-  	background-image: url(../images/capo.png);
-  	background-position: 0% 0%;
-
+  	background-image: url(../images/profile2.jpg);
+  	background-position: 0% 50%;
 
 }
 #sectionContact h6{
 	font-weight: bolder;
+	color: #fff;
 }
 
 .contactForm h4 {
 	text-align: center;
-	color:  #111;
+	color:  #000;
 	font-weight: bolder;
 }
-.contactForm .feel{
-	color: #e6e6e6;
-}
+
 
 .contactForm h5 {
 	text-align: center;
-	color: #111;
+	color:#fff;
 	font-weight: bold;
 }
-
+.feel {
+	color: #fff;
+}
 
 /* ====FOOTER=== */
 
