@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel=" shortcut icon" href="images/favicon.ico">
+    <link rel=" shortcut icon" href="images/fav.png">
     <!-- Icons
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="icons/Linea/styles.css" />
@@ -486,14 +486,14 @@
             </div>
 
 
-          <div class="grid-item item-five item-padding">
+           <div class="grid-item item-five item-padding">
 
-             <a class="37signal" href="/37Signal" target="_blank">
+            <a class="zodiac" href="/zodiac" target="_blank">
 
-                <img src="images/p4.png" alt="">
+                <img src="images/p10.png" alt="">
 
                   <div class="itemHover">
-                    <h6>37signal Replica</h6>
+                    <h6>Zodiac</h6>
                     <h4></h4>
                   </div>
 
@@ -538,21 +538,7 @@
 
             </div>
 
-             <div class="grid-item item-five item-padding">
-
-            <a class="zodiac" href="/zodiac" target="_blank">
-
-                <img src="images/p10.png" alt="">
-
-                  <div class="itemHover">
-                    <h6>Zodiac</h6>
-                    <h4></h4>
-                  </div>
-
-              </a>
-
-
-              </div>
+            
 
             <div class="grid-item item-five item-padding">
 
@@ -570,6 +556,24 @@
              
             </div>   
 
+
+            <div class="grid-item item-five item-padding">
+
+             <a class="37signal" href="/clock" target="_blank">
+
+                <img src="images/p12.png" alt="">
+
+                  <div class="itemHover">
+                    <h6>Clock</h6>
+                    <h4></h4>
+                  </div>
+
+              </a>
+
+            </div>
+
+
+
     </div>
     </div>
 
@@ -584,39 +588,59 @@
 <!-- section Contact
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-       <section id="sectionContact" class="sectionContact">
-
-         
-
+       <section id="sectionContact">
             <div class="sectionTitle LessPaddingTitle">
               <h1>Contact</h1>
-              
-           <!--  <img class="img-responsive moto" src="img/profile2.jpg"> -->
+              <h6>Get in touch</h6>
             </div>      
+                  
+            <div class="container">
+                 
+                   <div class="contactForm">
 
-            <div class="col-md-2 col-sm-2 col-xs-2">
-                <img class="img-responsive"  src="images/gopro.png">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!--MESSAGE SENT SUCCESFULLY-->
+                    <div id="message"></div>
+
+                    <!--MAIN FORM-->
+
+                    <form method="post" action="contact.php" name="contactform" id="contactform">
+
+                    <fieldset>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <input name="name" type="text" id="name" placeholder="Name* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <input name="email" type="text" id="email" placeholder="E-mail* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-4 col-sm-12 col-xs-12">
+                        <input name="subject" type="text" id="subject" placeholder="Subject* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <textarea name="comments" cols="40" rows="3" placeholder="Message* :" id="comments"></textarea>
+                      </div>
+
+                        <input type="submit" class="submit" id="submit" value="Send message" />
+                       
+
+                    </fieldset>
+
+                    </form>
+                    <!--END Main form-->
+                    </div>
+
+                    </div>
+                    <!-- END contact FORM-->
             </div>
+                    
 
-
-
-          <div class="col-md-10 col-sm-10 col-xs-10">
-            <div class="contactForm">
-                  <h4>Feel free to contact me with any <span class="feel"> questions, I'd</span> be happy to answer them.</h4>
-                  <br>
-                  <br>
-                  <h5>(916) 548 4179</h5>
-                  <br>
-                  <br>
-                  <h5>lewhat<span class="feel">@live.com</span></h5>
-
-               </div> 
-          </div>
-
-    
-      
                 
         </section>
+
 
   <!-- Footer
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -627,7 +651,7 @@
 
                 <div class="col-md-4 col-sm-4 col-xs-12 fCopy">
                 Copyright © <span>lewhat</span>2016
-               
+               <p>Made with love and passion.</p>
                 </div>
 
                 <div class="col-md-4 col-sm-4 col-xs-12 fScroll">
@@ -647,7 +671,7 @@
                     <i class="fa fa-github"></i>
                   </span>
                   </a>
-              <a href="https://www.linkedin.com/in/lewhat-weldetnesae-329999aa?trk=nav_responsive_tab_profile" target="_blank">
+              <a href="https://www.linkedin.com/in/lewhat-weldetnesae-329999aa" target="_blank">
                   <span aria-hidden="true" class="">
                     <i class="fa fa-linkedin"></i>
                   </span>
@@ -704,10 +728,7 @@ var $container2 = $('#blog-grid');
 <script type="text/javascript">
 $(document).ready(function(){
   
-  //.parallax(xPosition, speedFactor, outerHeight) options:
-  //xPosition - Horizontal position of the element
-  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+  
 $('#sectionIntro').parallax({ "coeff":+0.5 });
 
 })

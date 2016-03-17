@@ -1,25 +1,10 @@
-/*!
- * Dora Onepage Personal Portfolio Template
- * © scrils
-*/
-/* ========TABLE OF CONTENTS========== 
-01. NAVIGATION MENU
-02. SECTION INTRO
-03. SECTION ABOUT
-04. SECTION RESUME
-05. SECTION PORTFOLIO (WORKS)
-06. SECTION SERVICES
-07. SECTION BLOG
-08. SECTION CONTACT
-09. MEDIA QUERIES FOR RESPONSIVE DESIGN
-
-/* === 01. NAVIGATION MENU */
 
 /*PAGE LOADER*/
 
 html{
 	position: relative;
 	background-color: #fff;
+	overflow-x:hidden;
 }
 
 body{
@@ -81,7 +66,7 @@ a:focus {
   	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
   	position: fixed;
   	top: 0px;
-  	background: #c3d7d8;
+  	background: #fff;
   	box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
 }
 #headerBar .container {
@@ -143,7 +128,7 @@ a:focus {
 	margin-right: auto;
 	margin-top: 14%;
 	text-align: left;
-	background-color: rgba(255,255,255,0.97);
+	background-color: rgba(255,255,255,0.95);
 	padding:50px;
 	padding-bottom: 30px;
 }
@@ -311,9 +296,9 @@ a:focus {
 #sectionResume{
 	background: #c3d7d8;
 	padding-bottom: 100px;
-	background-size: cover;
+	/*background-size: cover;
   	background-image: url(../images/ss2.jpg);
-  	background-position: 0% 100%;
+  	background-position: 0% 100%;*/
 
 }
 
@@ -462,7 +447,7 @@ a:focus {
 
 #sectionPortfolio{
 	padding-bottom: 100px;
-	background: #c3d7d8;
+	background:#c3d7d8;
 
 }
 
@@ -596,45 +581,124 @@ a:focus {
 
 #sectionContact{
 	margin-bottom: 0px;
-	padding-bottom: 0px;
-	background: #fff;
-	min-height: 700px;
- 
+	padding-bottom: 100px;
+	background: #fbfbfb;
+}
+input, textarea, select {
+	background:#eee;
+	vertical-align: top;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	margin: 0;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-bottom:0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color:#a74752;
+    font-family: "Roboto Slab", sans-serif;
 }
 
-.contactForm{
-	padding:50px;
-	margin-top: 0px;
-}
-.contactForm h4 {
-	text-align: center;
-	color:  #a74752;
-	font-weight: bolder;
+textarea{
+	min-height: 150px;
 }
 
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	position: relative;
+	z-index: 5;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+}
 
-.contactForm h5 {
-	text-align: center;
-	color:#a74752;
-	font-weight: bold;
+input.submit {
+	width: auto;
+	cursor: pointer;
+	position: relative;
+    background: #111;
+    color: #fff;
+    border:none;
+    padding: 15px 50px;
+    margin: 20px 0;
+    margin-left: 15px;
+    transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	text-decoration: none;
+	font-size: 12px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	letter-spacing: 0.08em;
+  	font-family: "Montserrat", sans-serif;
 }
-.feel {
-	color: #a74752;
+input.submit:hover{
+	background:#a74752;
 }
-.textContact {
-	margin-right: auto;
-	margin-top: 0%;
-	text-align: left;
-	/*background-color: rgba(255,255,255,0.6);*/
-	padding:0px;
-	padding-bottom: 0px;
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #888;
 }
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #888;
+}
+#contactform input[type="submit"][disabled] { background:#777; cursor: default; }
+#contactform div {margin: 20px 0;}
+.contactForm fieldset { padding:0;border:0; }
+.contactForm label {
+	font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* ====MESSAGE FOR SUCCES==== */
+
+#message { 
+	margin: 1em 0; 
+	padding: 0; 
+	display: block; 
+	background: transparent none; 
+}
+#message h1 {
+  	letter-spacing: 1px;
+ 	font-size: 20px;
+  	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#message p {
+  	font-size: 16px;
+  	font-weight: 200;
+  	text-align: left;
+  	font-style: italic;
+}
+
+/* ====MESSAGE FOR ERROR==== */
+.errorMessage { 
+  	display: block;
+  	font-size: 14px;
+    padding: 20px 0 0 0;
+}
+
+ul.errorMessages { padding: 10px 0 0 0; }
+ul.errorMessages li { 
+  	font-size: 16px;
+  	font-weight: 200;
+  	text-align: left;
+  	color: #000000;
+  	list-style: none;
+  	line-height: 25px;
+}
+
 /* ====FOOTER=== */
 
 .pFooter {
 	background: #c3d7d8;
 	position: relative;
-	padding: 20px 0 30px 0;
+	padding: 10px 0 30px 0;
 }
 .fCopy {
 	text-align: left;
@@ -643,7 +707,7 @@ a:focus {
 	font-size: 14px;
 	letter-spacing: 1px;
 	font-family: "Roboto Slab", sans-serif;
-	padding: 30px 0px;
+	padding: 10px 0px;
 }
 .fCopy span{
 	font-family: "Montserrat", sans-serif;
@@ -676,7 +740,7 @@ a:focus {
 	text-align: right;
 	padding-right: 20px !important;
 	font-size: 25px;
-	padding: 22px 0px;
+	padding: 12px 0px;
 }
 .fIcons span {
 	margin: 0 3px;
