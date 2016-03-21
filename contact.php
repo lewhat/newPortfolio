@@ -6,7 +6,7 @@ if ( !defined( "PHP_EOL" ) ) define( "PHP_EOL", "\r\n" );
 
 //// Place your e-mail here
 
-$address = "lewhat@live.com";
+$address = "lewhata@gmail.com";
 
 
 //// Don't edit :)
@@ -86,7 +86,7 @@ if ( mail( $address, $e_subject, $msg, $headers ) ) {
 	echo "<fieldset>";
 	echo "<div class='successPage'>";
 	echo "<h1>Your email was sent!</h1>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
+	echo "<p>Thank you <strong>$name</strong>, your message has been submitted.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 

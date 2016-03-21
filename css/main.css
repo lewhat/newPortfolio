@@ -174,8 +174,8 @@ a:focus {
 
 #sectionAbout{
 	background-color: rgba(255,255,255,0.8);
-	padding-bottom: 100px;
-
+	padding-bottom: 200px;
+	padding-top: 200px;
 }
 
 .sectionTitle{
@@ -239,7 +239,7 @@ a:focus {
 	font-family: 'Roboto Slab', sans-serif;
 	font-size: 13px;
 	text-align: left;
-	line-height: 5px;
+	line-height: 15px;
 	margin-bottom: 30px;
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -295,7 +295,8 @@ a:focus {
 
 #sectionResume{
 	background: #c3d7d8;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
+	padding-top: 200px;
 	/*background-size: cover;
   	background-image: url(../images/ss2.jpg);
   	background-position: 0% 100%;*/
@@ -374,7 +375,8 @@ a:focus {
   	background: #fff;
  	position: relative;
   	z-index: 200;
-  	padding-bottom: 100px;
+  	padding-top: 200px;
+  	padding-bottom: 200px;
   	
 }
 .blog-item {
@@ -446,7 +448,8 @@ a:focus {
 
 
 #sectionPortfolio{
-	padding-bottom: 100px;
+	padding-bottom: 200px;
+	padding-top: 200px;
 	background:#c3d7d8;
 
 }
