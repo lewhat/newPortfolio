@@ -249,9 +249,13 @@ a:focus {
 .about img{
 	text-align: center;
 	margin-left: -20px !important;
-	border-radius: 0% 25%;
+	border-radius: 0% 0%;
 }
+.progress {
 
+	height: 3px;
+	
+}
 .quote{
 	background-color: #a74752;
 	padding: 20px 55px;
