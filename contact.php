@@ -6,7 +6,7 @@ if ( !defined( "PHP_EOL" ) ) define( "PHP_EOL", "\r\n" );
 
 //// Place your e-mail here
 
-$address = "lewhata@gmail.com";
+$address = "lewhat@live.com";
 
 
 //// Don't edit :)
