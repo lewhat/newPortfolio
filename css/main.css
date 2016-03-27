@@ -300,7 +300,9 @@ a:focus {
 #sectionResume{
 	background: #c3d7d8;
 	padding-bottom: 200px;
-	padding-top: 200px;
+
+	
+
 	/*background-size: cover;
   	background-image: url(../images/ss2.jpg);
   	background-position: 0% 100%;*/
@@ -379,8 +381,9 @@ a:focus {
   	background: #fff;
  	position: relative;
   	z-index: 200;
-  	padding-top: 200px;
+  	
   	padding-bottom: 200px;
+
   	
 }
 .blog-item {
@@ -453,7 +456,6 @@ a:focus {
 
 #sectionPortfolio{
 	padding-bottom: 200px;
-	padding-top: 200px;
 	background:#c3d7d8;
 
 }
