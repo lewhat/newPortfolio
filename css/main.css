@@ -3,14 +3,14 @@
 
 html{
 	position: relative;
-	background-color: #fff;
+	background-color: #c3d7d8;
 	overflow-x:hidden;
 }
 
 body{
 	background: transparent;
 	position: relative;
-	background-color: #fff;
+	background-color: #c3d7d8;
 }
 a:focus {
 	outline: 0;
@@ -99,10 +99,10 @@ a:focus {
   	text-transform: uppercase;
   	color: #111;
 }
-.navbar li.active a {
+/*.navbar li.active a {
 	color: #a74752;
 	border-bottom: 2px solid #a74752;
-}
+}*/
 .navbar-toggle {
 	font-size: 30px;
 	cursor: pointer;
@@ -117,7 +117,7 @@ a:focus {
 #sectionIntro {
   	position: relative;
   	width: 100%;
-  	min-height: 600px;
+  	min-height: 670px;
 	background-size: cover;
   	background-image: url(../images/commute1.gif);
   	background-position: 0% 0%;
@@ -174,9 +174,8 @@ a:focus {
 
 #sectionAbout{
 	background-color: rgba(255,255,255,0.8);
-	padding-bottom: 200px;
-	padding-top: 200px;
-}
+	padding-bottom: 100px;
+	}
 
 .sectionTitle{
 	padding-top: 100px;
@@ -299,13 +298,7 @@ a:focus {
 
 #sectionResume{
 	background: #c3d7d8;
-	padding-bottom: 200px;
-
-	
-
-	/*background-size: cover;
-  	background-image: url(../images/ss2.jpg);
-  	background-position: 0% 100%;*/
+	padding-bottom: 100px;
 
 }
 
@@ -372,81 +365,6 @@ a:focus {
 	padding-left: 65px;
 }
 
-/* ---------------------------------------------
- 06. Qualities
- ----------------------------------------------- */
-
-#sectionQualities {
-	
-  	background: #fff;
- 	position: relative;
-  	z-index: 200;
-  	
-  	padding-bottom: 200px;
-
-  	
-}
-.blog-item {
-	margin-left: 10px;
-	margin-bottom: 50px;
-	padding: 25px;
-	text-align: left;
-	margin-top: 10px;
-	background-color: #f9f7f8;
-}
-
-.item-margin{
-	margin-right: 3.3%;
-}
-.item-four { width: 34%; }
-
-.blog-item h4 {
-	font-family: "Montserrat", sans-serif;
-	color:#333;
-	font-weight: bold !important;
-	font-size: 16px;
-	text-transform: uppercase;
-	margin-bottom: 1px;
-	letter-spacing: 0.08em;
-	line-height: 25px;
-}
-.blog-item h6{
-	padding-top:10px;
-	border-top: 1px solid #c3d7d8;
-	text-align: left;
-	color:#a74752;
-	font-family: "Montserrat", sans-serif;
-	letter-spacing: 0.04em;
-	font-size: 12px;
-	font-weight: 700;
-}
-
-.blog-item h6 a{
-	color:#a74752;
-}
-
-
-
-.qualitiesIcon{
-	color:#f9f7f8; 
-	font-size: 30px;
-	width: 30px;
-	height: 30px;
-	background: #a74752;
-	padding: 0px 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	border-radius: 50%;
-	margin-bottom: 0px;
-	
-}
-
-.blog-item:hover{
-	opacity: 1; 
-	-webkit-transform: scale3d(1.1,1.1,1.1);
-    transform: scale3d(1.1,1.1,1.1);
-}
-
 
 /*--------------------------------------------------
 	05. section Portfolio
@@ -455,9 +373,8 @@ a:focus {
 
 
 #sectionPortfolio{
-	padding-bottom: 200px;
-	background:#c3d7d8;
-
+	padding-bottom: 100px;
+	background: #f9f7f8;
 }
 
 
@@ -581,6 +498,86 @@ a:focus {
   	padding-bottom: 30px;
 }
 
+/* ---------------------------------------------
+ 06. Qualities
+ ----------------------------------------------- */
+#sectionQualities {
+	
+  	background:#c3d7d8;
+ 	position: relative;
+  	padding-bottom: 200px;
+ }
+
+
+.sectionItem{
+	margin: 0px;
+	padding-bottom: 50px;
+
+}
+
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #a74752;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
 
 /*--------------------------------------------------
 	08. section Contact
@@ -591,7 +588,8 @@ a:focus {
 #sectionContact{
 	margin-bottom: 0px;
 	padding-bottom: 100px;
-	background: #fbfbfb;
+	padding-top: 50px;
+	background: #f9f7f8;
 }
 input, textarea, select {
 	background:#eee;
@@ -705,9 +703,10 @@ ul.errorMessages li {
 /* ====FOOTER=== */
 
 .pFooter {
-	background: #c3d7d8;
+	background: #fff;
 	position: relative;
-	padding: 10px 0 30px 0;
+	padding: 50px 0 30px 0;
+
 }
 .fCopy {
 	text-align: left;
@@ -716,7 +715,7 @@ ul.errorMessages li {
 	font-size: 14px;
 	letter-spacing: 1px;
 	font-family: "Roboto Slab", sans-serif;
-	padding: 10px 0px;
+	padding: 30px 0px;
 }
 .fCopy span{
 	font-family: "Montserrat", sans-serif;
@@ -749,7 +748,7 @@ ul.errorMessages li {
 	text-align: right;
 	padding-right: 20px !important;
 	font-size: 25px;
-	padding: 12px 0px;
+	padding: 22px 0px;
 }
 .fIcons span {
 	margin: 0 3px;
